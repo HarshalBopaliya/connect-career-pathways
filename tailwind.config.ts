@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom JobConnect colors
+				jobconnect: {
+					navy: '#0A2463',
+					teal: '#3CAEA3',
+					orange: '#F95738',
+					lightgray: '#F8F9FA',
+					white: '#FFFFFF',
 				}
 			},
 			borderRadius: {
