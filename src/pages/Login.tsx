@@ -31,19 +31,19 @@ const Login = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-md mx-auto">
             <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center pb-2">
+              <CardHeader className="text-center pb-2 bg-jobconnect-navy text-white rounded-t-lg">
                 <CardTitle className="text-2xl">Welcome Back</CardTitle>
-                <CardDescription>
+                <CardDescription className="text-gray-300">
                   Sign in to your JobConnect account
                 </CardDescription>
               </CardHeader>
               
-              <Tabs defaultValue="jobseeker" onValueChange={setUserType} className="px-6 pt-2">
+              <Tabs defaultValue="jobseeker" onValueChange={setUserType} className="px-6 pt-4">
                 <TabsList className="grid grid-cols-2 mb-6">
-                  <TabsTrigger value="jobseeker" className="flex items-center gap-2">
+                  <TabsTrigger value="jobseeker" className="flex items-center gap-2 data-[state=active]:bg-jobconnect-teal data-[state=active]:text-white">
                     <UserPlus size={16} /> Job Seeker
                   </TabsTrigger>
-                  <TabsTrigger value="employer" className="flex items-center gap-2">
+                  <TabsTrigger value="employer" className="flex items-center gap-2 data-[state=active]:bg-jobconnect-orange data-[state=active]:text-white">
                     <Building size={16} /> Employer
                   </TabsTrigger>
                 </TabsList>
@@ -91,7 +91,7 @@ const Login = () => {
                     </CardContent>
                     
                     <CardFooter className="flex flex-col">
-                      <Button type="submit" className="w-full bg-jobconnect-navy mb-4">
+                      <Button type="submit" className="w-full bg-jobconnect-teal hover:bg-jobconnect-teal/90 mb-4">
                         <LogIn className="mr-2 h-4 w-4" /> Sign In
                       </Button>
                       
@@ -123,7 +123,7 @@ const Login = () => {
                       <div className="space-y-2">
                         <div className="flex justify-between items-center">
                           <Label htmlFor="employer-password">Password</Label>
-                          <Link to="/forgot-password" className="text-xs text-jobconnect-teal hover:underline">
+                          <Link to="/forgot-password" className="text-xs text-jobconnect-orange hover:underline">
                             Forgot password?
                           </Link>
                         </div>
@@ -148,13 +148,13 @@ const Login = () => {
                     </CardContent>
                     
                     <CardFooter className="flex flex-col">
-                      <Button type="submit" className="w-full bg-jobconnect-teal mb-4">
+                      <Button type="submit" className="w-full bg-jobconnect-orange hover:bg-jobconnect-orange/90 mb-4">
                         <LogIn className="mr-2 h-4 w-4" /> Employer Sign In
                       </Button>
                       
                       <p className="text-sm text-center text-gray-600">
                         Don't have an employer account?{' '}
-                        <Link to="/employer/register" className="text-jobconnect-teal hover:underline">
+                        <Link to="/employer/register" className="text-jobconnect-orange hover:underline">
                           Register as employer
                         </Link>
                       </p>

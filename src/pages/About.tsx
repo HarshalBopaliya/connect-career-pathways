@@ -1,8 +1,7 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { BriefcaseBusiness, Target, Users, BookOpen, Award, BarChart3, HeartHandshake, Clock, Building } from 'lucide-react';
+import { BriefcaseBusiness, Target, Users, BookOpen, Award, BarChart3, HeartHandshake, Clock, Building, Globe } from 'lucide-react';
 
 const About = () => {
   const teamMembers = [
